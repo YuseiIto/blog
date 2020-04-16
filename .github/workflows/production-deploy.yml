@@ -16,14 +16,6 @@ jobs:
         with:
           node-version: "10.x"
 
-      - name: Cache dependencies
-        uses: actions/cache@v1
-        with:
-          path: ~/.cache/yarn
-          key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-          restore-keys: |
-            ${{ runner.os }}-yarn-
-
       - run: npm install -g hexo
       - run: yarn install
       - run: yarn run test
@@ -32,6 +24,6 @@ jobs:
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{secrets.ACTIONS_DEPLOY_KEY}}
           publish_dir: ./public
           publish_branch: master
