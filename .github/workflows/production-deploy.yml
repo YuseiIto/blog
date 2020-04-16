@@ -24,6 +24,7 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-yarn-
 
+      - run: npm install -g hexo
       - run: yarn install
       - run: yarn run test
       - run: yarn run generate
