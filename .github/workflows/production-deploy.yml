@@ -1,28 +1,24 @@
-name: production deploy
+name: Production deploy
 
 on:
   push:
     branches:
-      - src
+      - master
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
-
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
         with:
-          node-version: "10.x"
-
-      - run: npm install -g hexo
-      - run: yarn install
-      - run: yarn run test
-      - run: hexo generate
-
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - uses: yrpang/github-actions-hexo@master
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-          publish_dir: ./public
+          deploykey: ${{secrets.ACTIONS_DEPLOY_KEY}}
+          username: yuseiito
+          email: yuseikun@Outlook.jp
