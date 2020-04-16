@@ -10,7 +10,7 @@
         "test": "echo 'No tests specified'"
     },
     "dependencies": {
-        "bulma-stylus": "^0.8.0",
+        "bulma-stylus": "^0.8.1-rc.2",
         "hexo": "^4.0.0",
         "hexo-component-inferno": "^0.2.4",
         "hexo-generator-archive": "^1.0.0",
