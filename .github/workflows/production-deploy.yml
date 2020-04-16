@@ -1,0 +1,24 @@
+name: Production deploy
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-18.04
+    steps:
+      runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Cache node modules
+        uses: actions/cache@v1
+        with:
+          path: node_modules
+          key: ${{runner.OS}}-${{hashFiles('**/package-lock.json')}}
+      - uses: yrpang/github-actions-hexo@master
+        with:
+          deploykey: ${{secrets.ACTIONS_DEPLOY_KEY}}
+          username: yuseiito
+          email: yuseikun@Outlook.jp
