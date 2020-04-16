@@ -6,7 +6,8 @@
         "version": "3.9.0"
     },
     "scripts": {
-        "generate": "hexo generate"
+        "generate": "hexo generate",
+        "test": "echo 'No tests specified'"
     },
     "dependencies": {
         "hexo": "^3.9.0",
