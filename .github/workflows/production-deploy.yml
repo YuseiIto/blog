@@ -27,7 +27,7 @@ jobs:
       - run: npm install -g hexo
       - run: yarn install
       - run: yarn run test
-      - run: yarn run generate
+      - run: hexo generate
 
       - name: deploy
         uses: peaceiris/actions-gh-pages@v3
