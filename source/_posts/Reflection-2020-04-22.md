@@ -2,7 +2,7 @@
 layout: post
 title: Reflection 2020/04/22
 date: 2020-04-23 00:37:14
-tags: ["reflection", "ラジオ", "AWS", "数学", "部活", "物理"]
+tags: ["reflection", "AWS", "数学", "API Gateway", "Lambda", "進路", "CORS"]
 ---
 
 ## 8:43 起床
