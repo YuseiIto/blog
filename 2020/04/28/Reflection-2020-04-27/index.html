@@ -2,20 +2,20 @@
 <html >
 <head>
     <meta charset="utf-8">
-<title>仕様書文化とissue文化 - I/O</title>
+<title>Reflection 2020/04/27 - I/O</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 
 
-    <meta name="description" content="行政や、割と歴史のある企業は、「仕様書文化」なのかなと思った。 「こう作ってね」を、色々まとめて一枚で示す。それを作る文化。おそらく注文の単位としてわかりやすいと言うのもあるのだと思う。 一方で、OSS を含む多くの開発は issue 文化。小さな課題を並べ、それの解決で全体としてポジティブな方向を目指す。アジャイルとかもその流れだと思う。 僕はよく「行政とテックの世界はものごとのやり方が違う」と">
+    <meta name="description" content="久しぶりの Reflection ですね。 今日もおもにコード書いてたのでREFLECTIONおやすみです。— Yusei Ito (@ItyuJ) April 24, 2020   こういう日が続いたあと週末だったので、かなり久しぶり感があります。 8:30 　起床久しぶりにマシな時間に起きたかな? 明日は SHR までに朝食を終えたい。 8:45 SHR特に面白いこともなく。 9:30 朝食終">
 <meta property="og:type" content="article">
-<meta property="og:title" content="仕様書文化とissue文化">
-<meta property="og:url" content="http://blog.yuseiito.com/2020/04/16/culture-difference-gov-tech/index.html">
+<meta property="og:title" content="Reflection 2020&#x2F;04&#x2F;27">
+<meta property="og:url" content="http://blog.yuseiito.com/2020/04/28/Reflection-2020-04-27/index.html">
 <meta property="og:site_name" content="I&#x2F;O">
-<meta property="og:description" content="行政や、割と歴史のある企業は、「仕様書文化」なのかなと思った。 「こう作ってね」を、色々まとめて一枚で示す。それを作る文化。おそらく注文の単位としてわかりやすいと言うのもあるのだと思う。 一方で、OSS を含む多くの開発は issue 文化。小さな課題を並べ、それの解決で全体としてポジティブな方向を目指す。アジャイルとかもその流れだと思う。 僕はよく「行政とテックの世界はものごとのやり方が違う」と">
+<meta property="og:description" content="久しぶりの Reflection ですね。 今日もおもにコード書いてたのでREFLECTIONおやすみです。— Yusei Ito (@ItyuJ) April 24, 2020   こういう日が続いたあと週末だったので、かなり久しぶり感があります。 8:30 　起床久しぶりにマシな時間に起きたかな? 明日は SHR までに朝食を終えたい。 8:45 SHR特に面白いこともなく。 9:30 朝食終">
 <meta property="og:image" content="http://blog.yuseiito.com/images/og_image.png">
-<meta property="article:published_time" content="2020-04-16T15:00:00.000Z">
-<meta property="article:modified_time" content="2020-04-27T15:51:27.135Z">
+<meta property="article:published_time" content="2020-04-28T00:19:19.000Z">
+<meta property="article:modified_time" content="2020-04-27T15:51:27.123Z">
 <meta property="article:author" content="Yusei Ito">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://blog.yuseiito.com/images/og_image.png">
@@ -93,7 +93,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.png" alt="仕様書文化とissue文化" height="28">
+                <img src="/images/logo.png" alt="Reflection 2020/04/27" height="28">
             
             </a>
         </div>
@@ -149,13 +149,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2020-04-16T15:00:00.000Z">2020-04-16</time>
+                <time class="level-item has-text-grey" datetime="2020-04-28T00:19:19.000Z">2020-04-28</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a minute read (About 216 words)
+                    6 minutes read (About 906 words)
                 </span>
                 
                 
@@ -164,14 +164,36 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                仕様書文化とissue文化
+                Reflection 2020/04/27
             
         </h1>
         <div class="content">
-            <html><head></head><body><p>行政や、割と歴史のある企業は、「仕様書文化」なのかなと思った。</p>
-<p>「こう作ってね」を、色々まとめて一枚で示す。それを作る文化。おそらく注文の単位としてわかりやすいと言うのもあるのだと思う。</p>
-<p>一方で、OSS を含む多くの開発は issue 文化。<br>小さな課題を並べ、それの解決で全体としてポジティブな方向を目指す。<br>アジャイルとかもその流れだと思う。</p>
-<p>僕はよく「行政とテックの世界はものごとの<strong>やり方</strong>が違う」と主張するのだけれど、それをもう少し具体化できた気がした。</p>
+            <html><head></head><body><p>久しぶりの Reflection ですね。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">今日もおもにコード書いてたのでREFLECTIONおやすみです。</p>— Yusei Ito (@ItyuJ) <a href="https://twitter.com/ItyuJ/status/1253721400453378048?ref_src=twsrc%5Etfw" target="_blank" rel="noopener">April 24, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<p>こういう日が続いたあと週末だったので、かなり久しぶり感があります。</p>
+<h3 id="8-30-起床"><a href="#8-30-起床" class="headerlink" title="8:30 　起床"></a>8:30 　起床</h3><p>久しぶりにマシな時間に起きたかな? 明日は SHR までに朝食を終えたい。</p>
+<h3 id="8-45-SHR"><a href="#8-45-SHR" class="headerlink" title="8:45 SHR"></a>8:45 SHR</h3><p>特に面白いこともなく。</p>
+<h3 id="9-30-朝食終わり。ベンキョーの準備-事務"><a href="#9-30-朝食終わり。ベンキョーの準備-事務" class="headerlink" title="9:30 朝食終わり。ベンキョーの準備,事務"></a>9:30 朝食終わり。ベンキョーの準備,事務</h3><p>最近朝の Slack 確認タイムが長くなってきてヤバイと思ったので特にどうでもいいチャンネルをひたすらミュートした。</p>
+<h3 id="10-00-友人のおべんつよ-zoom-に接続"><a href="#10-00-友人のおべんつよ-zoom-に接続" class="headerlink" title="10:00 友人のおべんつよ zoom に接続"></a>10:00 友人のおべんつよ zoom に接続</h3><p>人の目があると勉強しますね。生物をやった。</p>
+<img src="/2020/04/28/Reflection-2020-04-27/biology.jpeg" class>
+<p>ホワイトボードはこうすると便利。</p>
+<h3 id="途中でバグ報告が入る"><a href="#途中でバグ報告が入る" class="headerlink" title="途中でバグ報告が入る"></a>途中でバグ報告が入る</h3><p>今日 19:00 からあったある件について、急遽直さなければならなかったバグの報告を受ける。<br>焦りながら修正を試みるもバグの再現が至難の業。とりあえずロールバックで対処できた。どうしようこれ。</p>
+<h3 id="12-xx-おべんつよ-zoom-終わり"><a href="#12-xx-おべんつよ-zoom-終わり" class="headerlink" title="12:xx おべんつよ zoom 終わり"></a>12:xx おべんつよ zoom 終わり</h3><p>といいながらほとんどバグつぶししてた。<br>またやりましょうね。</p>
+<h3 id="13-30-おひるごはん"><a href="#13-30-おひるごはん" class="headerlink" title="13:30 おひるごはん"></a>13:30 おひるごはん</h3><p>カレー。昨夜のやつ。</p>
+<h3 id="14-30-事務"><a href="#14-30-事務" class="headerlink" title="14:30- 事務"></a>14:30- 事務</h3><p>なんだか最近色々たまってるのと、滋賀県公式コロナウイルス感染症対策サイトについての話を考えてたのと。</p>
+<h3 id="15-00-meeting"><a href="#15-00-meeting" class="headerlink" title="15:00- meeting"></a>15:00- meeting</h3><p>おそらくまたそのうちこの内容を明らかにする。<br>19:00 からの件と深く関係する。</p>
+<h3 id="17-00-お散歩"><a href="#17-00-お散歩" class="headerlink" title="17:00- お散歩"></a>17:00- お散歩</h3><p>以前は「徘徊」と呼んでいた。今は「浮世のパトロール」と呼んでる。<br>今日も浮世は平和だった。</p>
+<h3 id="17-30-おうちへ。なんかいろんな情報を漁るなど"><a href="#17-30-おうちへ。なんかいろんな情報を漁るなど" class="headerlink" title="17:30 おうちへ。なんかいろんな情報を漁るなど"></a>17:30 おうちへ。なんかいろんな情報を漁るなど</h3><h3 id="19-00-zoom-なやつ。"><a href="#19-00-zoom-なやつ。" class="headerlink" title="19:00 zoom なやつ。"></a>19:00 zoom なやつ。</h3><p>これの詳細をまた近いうちに公開すると思う。<br>ここで話させていただいた大人の方(まだ明らかにするつもりはないけどすごい人)のおっしゃっていたことに、</p>
+<ul>
+<li>難しい(あるいは範囲の絞られていない抽象的な)質問をする相手に対しては、<strong>明示的にスコープを切っ</strong>た上で、<strong>自分の得意なフィールドの話に持っていく</strong>のが、質問への応え方の tips の一つだということを教わる。明文化してみるとなるほどと思う。</li>
+</ul>
+<h3 id="20-00-メシ"><a href="#20-00-メシ" class="headerlink" title="20:00 メシ"></a>20:00 メシ</h3><p>やいた　にく</p>
+<h3 id="21-00-休憩"><a href="#21-00-休憩" class="headerlink" title="21:00- 休憩"></a>21:00- 休憩</h3><p>Twitter , facebook, LIN, Slack を行ったりきたりしてた。無駄だなぁ…</p>
+<p>などなどだらだらしていたらもうこんな時間。</p>
+<h3 id="0-36-いま"><a href="#0-36-いま" class="headerlink" title="0:36 いま"></a>0:36 いま</h3><p>これを書いている。風呂がまだ。</p>
+<h2 id="Overall"><a href="#Overall" class="headerlink" title="Overall"></a>Overall</h2><p>なんというか、神経を使う 1 日だったが、刺激的だった。<br>明日以降のモチベーションにもなる。<br>あと、生物の勉強でうまくホワイトボードをいかせてたのもよかった。明日の朝まで残しておいて、10 分くらいで復習してみようと思う。</p>
+<p>終わり。</p>
 </body></html>
         </div>
         
@@ -187,17 +209,10 @@
 <div class="card card-transparent">
     <div class="level post-navigation is-flex-wrap is-mobile">
         
-        <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2020/04/17/Reflection-2020-04-17/">
-                <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">Reflection 2020/04/18</span>
-            </a>
-        </div>
-        
         
         <div class="level-end">
-            <a class="level level-item has-link-grey  article-nav-next" href="/2019/08/25/overall-summer-holiday/">
-                <span class="level-item">超過密な夏休みを過ごした話</span>
+            <a class="level level-item has-link-grey  article-nav-next" href="/2020/04/23/Reflection-2020-04-22/">
+                <span class="level-item">Reflection 2020/04/22</span>
                 <i class="level-item fas fa-chevron-right"></i>
             </a>
         </div>
@@ -975,7 +990,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.png" alt="仕様書文化とissue文化" height="28">
+                    <img src="/images/logo.png" alt="Reflection 2020/04/27" height="28">
                 
                 </a>
                 <p class="is-size-7">
