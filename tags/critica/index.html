@@ -162,7 +162,7 @@
                 <span class="level-item has-text-grey">
                     
                     
-                    20 minutes read (About 3004 words)
+                    20 minutes read (About 3031 words)
                 </span>
                 
                 
@@ -202,14 +202,34 @@
 <p>効果測定の手法の話でめっちゃ褒めていただいて嬉しかったのを覚えています。</p>
 <p>そして、ようかん、おれと<a href="https://twitter.com/shinbunbun_" target="_blank" rel="noopener">しんぶんぶん</a>とで<a href="https://www.pref.hiroshima.lg.jp/site/innovation-event/redhack2020online.html" target="_blank" rel="noopener">レッドハッカソン</a>に出ている日に採択のメールが来ました。<br>届いた瞬間はハッカソン中でようかんと zoom で話していたのでリアルタイムに喜びました。</p>
 <h3 id="採択後"><a href="#採択後" class="headerlink" title="採択後"></a>採択後</h3><p>採択後のことは、割と成果報告で話したので、それでみてもらえるかなとは思います。</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GuanTTXfF7I?start=2147" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<style>
+.youtube-video-container {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.youtube-video-container:before {
+  content: "";
+  display: block;
+  padding-top: calc(9 / 16 * 100%);
+}
+.youtube-video-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+</style>
+<div class="youtube-video-container">
+<iframe width="100%" height="100%" class="youtube-video-iframe" src="https://www.youtube.com/embed/GuanTTXfF7I?start=2147" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
 <p>が、せっかくなので各イベント前後のことは書いておこうかなと思います。</p>
 <h4 id="ブースト会議前"><a href="#ブースト会議前" class="headerlink" title="ブースト会議前"></a>ブースト会議前</h4><p>ブースト前は主にマイルストーン設定とかプロトタイプの改善とか比較的抽象度の高いことをしていました。<br>ここでは関さんに目標から下ってマイルストーンを設定していく手法を教わりました。</p>
 <h4 id="ブースト会議後-中間前"><a href="#ブースト会議後-中間前" class="headerlink" title="ブースト会議後~中間前"></a>ブースト会議後~中間前</h4><p>ブーストで出たコメントを整理して、そこからどんどん V1 を実装していきました。この期間が一番コード書いてたんじゃないかな。<br>この期間で、高速化とかやってたので、他の PJ の PM の方々にも色々技術的なことを教わってました。</p>
 <h4 id="中間合宿"><a href="#中間合宿" class="headerlink" title="中間合宿"></a>中間合宿</h4><p>ここでは、未踏ジュニアの他のクリエータの方に critica 使ってみて!!ってやってました。</p>
-<p>####　中間後</p>
-<p>中間では、ブーストで出た「Google Forms と違うところは?」　みたいな質問が出てこなかったのが、新しいものを作って理解されてきたっぽさがあって嬉しかったです。</p>
+<h4 id="中間後"><a href="#中間後" class="headerlink" title="中間後"></a>中間後</h4><p>中間では、ブーストで出た「Google Forms と違うところは?」　みたいな質問が出てこなかったのが、新しいものを作って理解されてきたっぽさがあって嬉しかったです。</p>
 <p>しかし、「UI もうちょっと頑張ってほしい」とか「プレースホルダが不親切」といったコメントも出ていたので、UI がんばるぞの気持ちに火がつきました。</p>
 <p>その後、<a href="https://twitter.com/YukiMihashi" target="_blank" rel="noopener">三橋さん</a>に UI のレビューをしていただいたりしました。</p>
 <p>このあと色々考えて、UI を Vuetify ベースのめっちゃ Material な感じからあえて脱却させました。そしてロゴを導入しました。<br>この期間でかなり UI はよくできたと思っていて、この決断はよかったなと思っています。</p>
