@@ -16,7 +16,7 @@ open_graph:
     # Twitter ID
     twitter_id: Ityuj
     # Twitter site
-    twitter_site: 
+    twitter_site: https://twitter.com/ityuj
     # Google+ profile link
     google_plus: 
 # Navigation bar link settings
@@ -182,7 +182,7 @@ plugins:
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Google-Analytics
     google-analytics:
         # Google Analytics tracking id
-        tracking_id: 
+        tracking_id: G-CYPHLKJ46M
     # Baidu Analytics plugin settings
     # https://ppoffice.github.io/hexo-theme-icarus/Plugins/General/site-analytics-plugin/#Baidu-Analytics
     baidu-analytics:
